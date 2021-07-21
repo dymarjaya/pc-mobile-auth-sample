@@ -73,7 +73,6 @@ public class PersoAliasServiceImpl implements PersoAliasService {
         //     - DO NOT STORE ACTIVATION CODE, see comment above
         /**
          * Function to store Alias in database
-         * see /pers/activation_code code
          *
          * @param: String alias Alias object
          */
@@ -142,7 +141,6 @@ public class PersoAliasServiceImpl implements PersoAliasService {
         // check if alias value was created earlier (stored in database)
         /**
          * Function to get Alias from database
-         * see /pers/activation_code
          *
          * param: String alias Alias string
          *
