@@ -88,4 +88,4 @@ For web-app documentation:
 
 ### H2 Database Console
 Accessing the H2 database:
-`http://localhost:8080/h2-console`# pc-mobile-auth-sample
+`http://localhost:8080/h2-console`
