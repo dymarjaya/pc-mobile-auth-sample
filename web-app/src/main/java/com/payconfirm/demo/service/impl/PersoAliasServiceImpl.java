@@ -112,7 +112,7 @@ public class PersoAliasServiceImpl implements PersoAliasService {
      *  - a user types this alias into the mobile app
      *  - mobile app makes a request to this sample to /pers/alias/get_pc_user (this code)
      *    and provides the Alias
-     *  - /pers/get_pc_user calls PC Server to create a PC User and export them in JSON-format
+     *  - /pers/alias/get_pc_userr calls PC Server to create a PC User and export them in JSON-format
      *    to encrypt a keys this code uses "activation_code" value
      *    see https://repo.payconfirm.org/server/doc/v5/rest-api/#json-export-key
      *  - mobile app imports a PC Users and asks from a user activation_code value
@@ -144,7 +144,7 @@ public class PersoAliasServiceImpl implements PersoAliasService {
          * Function to get Alias from database
          * see /pers/activation_code
          *
-         * param: String $alias Alias string
+         * param: String alias Alias string
          *
          * return: Object Alias object
          */
