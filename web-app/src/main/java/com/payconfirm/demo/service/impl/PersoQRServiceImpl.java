@@ -22,8 +22,8 @@ public class PersoQRServiceImpl implements PersoQRService {
     private String system_id;
 
     /**
-     *      Code to create a new PC User
-     *      see https://repo.payconfirm.org/server/doc/v5/rest-api/#create-user
+     * Code to create a new PC User
+     * see https://repo.payconfirm.org/server/doc/v5/rest-api/#create-user
      */
     public CreatePCUserQRResponse createPCUserQR() {
 
