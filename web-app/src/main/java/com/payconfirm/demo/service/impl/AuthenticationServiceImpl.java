@@ -126,9 +126,9 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         /**
          * Function to store transaction info in database
          *
-         * @param: String $user_id PC User ID
-         * @param: String $transaction_id PC Transaction ID
-         * @param: String $status Status to store, can be 'created', 'confirmed', 'declined'
+         * @param: String user_id PC User ID
+         * @param: String transaction_id PC Transaction ID
+         * @param: String status Status to store, can be 'created', 'confirmed', 'declined'
          */
         Transaction transaction = new Transaction();
         transaction.setUserid(user_id);
@@ -190,8 +190,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         /**
          * Function get transaction info from database
          *
-         * @param: String $user_id PC User ID
-         * @param: String $transaction_id PC Transaction ID
+         * @param: String user_id PC User ID
+         * @param: String transaction_id PC Transaction ID
          *
          * @return: String Status, can be 'created', 'confirmed', 'declined'
          */
@@ -264,26 +264,27 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         }
 
         String transaction_id = transaction_callbackObj.getString("transaction_id");
-        Transaction transaction;
-        /**
-         * Function to store transaction info in database
+
+         /**
+         * Function get transaction info from database
          *
-         * @param: String $user_id PC User ID
-         * @param: String $transaction_id PC Transaction ID
-         * @param: String $status Status to store, can be 'created', 'confirmed', 'declined'
+         * @param: String user_id PC User ID
+         * @param: String transaction_id PC Transaction ID
+         *
+         * @return: String Status, can be 'created', 'confirmed', 'declined'
          */
+        Transaction transaction;
         transaction = transactionRepository.findByTransactionid(transaction_id);
 
         logger.info(transaction.toString());
 
         // store the status
         /**
-         * Function get transaction info from database
+         * Function to store transaction info in database
          *
-         * @param: String $user_id PC User ID
-         * @param: String $transaction_id PC Transaction ID
-         *
-         * @return: String Status, can be 'created', 'confirmed', 'declined'
+         * @param: String user_id PC User ID
+         * @param: String transaction_id PC Transaction ID
+         * @param: String status Status to store, can be 'created', 'confirmed', 'declined'
          */
         transaction.setUserid(transaction.getUserid());
         transaction.setTransactionid(transaction_id);
