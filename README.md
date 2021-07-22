@@ -83,9 +83,9 @@ After this step your mobile application is personalized
 
 
 ### Swagger documentation
-For simple web-app documentation:
+Simple web-app documentation:
 `http://localhost:8080/swagger-ui.html#`
 
 ### H2 Database Admin
-For accessing the H2 database admin:
+Accessing the H2 database admin:
 `http://localhost:8080/h2-console`
