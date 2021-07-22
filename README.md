@@ -79,13 +79,13 @@ After this step your mobile application is personalized
 
 >The sample code on the mobile application side (android-app) is slighty modified from [https://github.com/airome-tech/pc-mobile-auth-sample/tree/master/android-app](https://github.com/airome-tech/pc-mobile-auth-sample/tree/master/android-app). Adjustments and changes were made to make the android-app able to communicate with the web-app
 
->This sample code also adds a feature to record logs of the PC Server Events Post parameters. Information from the Events Post can be used for business needs such as business analytics or for security purposes such as a Fraud Detection System (FDS). In this sample code will be saved in a file called `fds.log`
+>This sample code also adds feature to record logs of the PC Server Events Post parameters. To use this feature, you should configure the events post url in change system settings PC Server (see [docs here](https://repo.payconfirm.org/server/doc/v5/rest-api/#change-system-settings)). In this sample code, the parameter is `<your server address>/fds`. Information from the PC Server Events Post can be used for business needs such as business analytics or for security purposes such as a Fraud Detection System (FDS). In this sample code will be saved in a file called `fds.log`
 
 
 ### Swagger documentation
-For web-app documentation:
+For simple web-app documentation:
 `http://localhost:8080/swagger-ui.html#`
 
-### H2 Database Console
-Accessing the H2 database:
+### H2 Database Admin
+For accessing the H2 database admin:
 `http://localhost:8080/h2-console`
